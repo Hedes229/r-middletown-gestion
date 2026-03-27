@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact & Réservation | R. Middleton Gestion</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,400;0,700;1,400&family=Manrope:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./style.css">
+    <script type="module" src="./main.js"></script>
+    <!-- Calendly widget script -->
+    <script type="text/javascript" src="https://assets.calendly.com/assets/external/widget.js" async></script>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="glass-effect fixed-nav">
+        <div class="container nav-content">
+            <div class="logo">
+                <img src="https://lh3.googleusercontent.com/aida/ADBb0uhedNh7o06tDECxg36_5Ja4P_ob7J22xJIp5zdT7EcDhoY-UBu56gZlJUFDRunIrz3Tupk1Y603tMN3S5ayKpB-MPk0fVVcSaEQVG_F7ip06eoczfBE5LMgfnWEEjH_XXj4P6JEXV0WTJzhpmiqn-j_zPs1szkrsqiLrnDRDcZX7MQju2_1GfWudvgyjiuQzdyNh1_MASBlgakNtyRt7jVFTKCvHIZWhfTnlu6y9gSNNgX90crG5pLBaymXGxlpw2neG_glT2KLIw" alt="Logo R. Middleton Gestion">
+                <span class="logo-text">R. MIDDLETON GESTION</span>
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="about.html">À Propos</a></li>
+                <li><a href="contact.html" class="active">Contact</a></li>
+                <li><a href="contact.html" class="cta-gradient btn-pill">Prendre rendez-vous</a></li>
+            </ul>
+            <button class="mobile-toggle">
+                <span class="material-symbols-outlined">menu</span>
+            </button>
+        </div>
+    </nav>
+
+    <main>
+        <header class="page-header section-padding bg-surface-low">
+            <div class="container">
+                <h1 class="h-serif display-lg" style="text-align: center;">Commençons à <span class="italic text-primary">travailler ensemble</span></h1>
+            </div>
+        </header>
+
+        <section class="contact-booking section-padding">
+            <div class="container">
+                <div class="contact-grid" style="display: grid; grid-template-columns: 1fr 1fr; gap: 4rem;">
+                    <!-- Calendly Embed -->
+                    <div class="calendly-section tonal-card" style="padding: 2rem; min-height: 600px;">
+                        <h2 class="h-serif" style="margin-bottom: 2rem;">Réserver un <span class="italic text-tertiary">rendez-vous</span></h2>
+                        <!-- Placeholder for Calendly Widget -->
+                        <!-- The user mentioned "son lien calendly", so I'll wait for the specific link if possible, 
+                             but I'll put a standard inline widget placeholder for now. -->
+                        <div class="calendly-inline-widget" data-url="https://calendly.com/YOUR_LINK_HERE" style="min-width:320px;height:630px;"></div>
+                    </div>
+
+                    <!-- Contact Info & Form -->
+                    <div class="info-section" style="display: flex; flex-direction: column; gap: 4rem;">
+                        <div class="contact-card tonal-card" style="padding: 3rem; background: var(--surface-container-low);">
+                            <h2 class="h-serif" style="font-size: 2rem; margin-bottom: 2rem;">Nos <span class="italic text-primary">Coordonnées</span></h2>
+                             <ul class="info-list" style="display: flex; flex-direction: column; gap: 2rem;">
+                                <li style="display: flex; gap: 1rem;">
+                                    <span class="material-symbols-outlined text-primary">location_on</span>
+                                    <div>
+                                        <p style="font-weight: 700;">15 Cours Louis Chauvel,</p>
+                                        <p>97139 Les Abymes, Guadeloupe</p>
+                                    </div>
+                                </li>
+                                <li style="display: flex; gap: 1rem; align-items: center;">
+                                    <span class="material-symbols-outlined text-primary">mail</span>
+                                    <p style="font-weight: 700;">middleton.gestion@gmail.com</p>
+                                </li>
+                                <li style="display: flex; gap: 1rem; align-items: center;">
+                                    <span class="material-symbols-outlined text-primary">schedule</span>
+                                    <p style="font-weight: 700;">Lun - Ven: 08:30 - 17:00</p>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div class="form-section tonal-card" style="padding: 3rem; background: var(--surface);">
+                             <h2 class="h-serif" style="font-size: 2rem; margin-bottom: 2rem;">Envoyez-nous un <span class="italic text-tertiary">message</span></h2>
+                            <form action="#" class="editorial-form">
+                                <div class="form-group" style="margin-bottom: 2rem;">
+                                    <label class="label-md">Nom Complet</label>
+                                    <input type="text" placeholder="Jean Dupont" style="width: 100%;">
+                                </div>
+                                <div class="form-group" style="margin-bottom: 2rem;">
+                                    <label class="label-md">Email</label>
+                                    <input type="email" placeholder="jean@exemple.com" style="width: 100%;">
+                                </div>
+                                <div class="form-group" style="margin-bottom: 2rem;">
+                                    <label class="label-md">Sujet</label>
+                                    <select style="width: 100%;">
+                                        <option>Création d'entreprise</option>
+                                        <option>Tenue comptable</option>
+                                        <option>Aide régionale</option>
+                                        <option>Autre demande</option>
+                                    </select>
+                                </div>
+                                <div class="form-group" style="margin-bottom: 3rem;">
+                                    <label class="label-md">Message</label>
+                                    <textarea rows="4" placeholder="Comment pouvons-nous vous aider ?" style="width: 100%;"></textarea>
+                                </div>
+                                <button type="submit" class="cta-gradient btn-pill" style="width: 100%; padding: 1.25rem; font-size: 1.125rem;">Envoyer ma demande</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <!-- ... same footer ... -->
+</body>
+</html>

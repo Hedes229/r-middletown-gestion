@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nos Services | R. Middleton Gestion</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,400;0,700;1,400&family=Manrope:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./style.css">
+    <script type="module" src="./main.js"></script>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="glass-effect fixed-nav">
+        <div class="container nav-content">
+            <div class="logo">
+                <img src="https://lh3.googleusercontent.com/aida/ADBb0uhedNh7o06tDECxg36_5Ja4P_ob7J22xJIp5zdT7EcDhoY-UBu56gZlJUFDRunIrz3Tupk1Y603tMN3S5ayKpB-MPk0fVVcSaEQVG_F7ip06eoczfBE5LMgfnWEEjH_XXj4P6JEXV0WTJzhpmiqn-j_zPs1szkrsqiLrnDRDcZX7MQju2_1GfWudvgyjiuQzdyNh1_MASBlgakNtyRt7jVFTKCvHIZWhfTnlu6y9gSNNgX90crG5pLBaymXGxlpw2neG_glT2KLIw" alt="Logo R. Middleton Gestion">
+                <span class="logo-text">R. MIDDLETON GESTION</span>
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="services.html" class="active">Services</a></li>
+                <li><a href="about.html">À Propos</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="contact.html" class="cta-gradient btn-pill">Prendre rendez-vous</a></li>
+            </ul>
+            <button class="mobile-toggle">
+                <span class="material-symbols-outlined">menu</span>
+            </button>
+        </div>
+    </nav>
+
+    <main>
+        <header class="page-header section-padding bg-surface-low">
+            <div class="container">
+                <h1 class="h-serif display-lg" style="text-align: center;">Nos Services <span class="italic text-tertiary">d'Excellence</span></h1>
+                <p class="body-lg" style="text-align: center; max-width: 800px; margin: 2rem auto 0;">Découvrez comment nous accompagnons votre entreprise vers le succès avec une expertise comptable rigoureuse et un conseil stratégique de proximité.</p>
+            </div>
+        </header>
+
+        <section class="services section-padding">
+            <div class="container">
+                <div class="services-grid">
+                    <!-- Large Card: Tenue comptable -->
+                    <div class="service-card tonal-card large">
+                        <div>
+                            <span class="material-symbols-outlined text-primary">account_balance_wallet</span>
+                            <h3>Tenue comptable</h3>
+                            <p>Externalisation complète de votre comptabilité pour vous concentrer sur votre cœur de métier. Nous gérons l'intégralité de votre saisie, le lettrage de vos comptes et la préparation de vos bilans.</p>
+                        </div>
+                        <div class="learn-more">
+                            En savoir plus <span class="material-symbols-outlined">arrow_forward</span>
+                        </div>
+                    </div>
+                    <!-- Regular Card: Paie -->
+                    <div class="service-card tonal-card">
+                        <span class="material-symbols-outlined highlight">payments</span>
+                        <h3>Gestion de la paie</h3>
+                        <p>Édition des bulletins de salaire et gestion rigoureuse des variables de paie et des congés.</p>
+                    </div>
+                    <!-- Regular Card: Social -->
+                    <div class="service-card tonal-card">
+                        <span class="material-symbols-outlined" style="color: var(--secondary)">group_add</span>
+                        <h3>Déclaration sociale</h3>
+                        <p>Gestion des relations avec les organismes sociaux (URSSAF, CGSS) et déclarations obligatoires.</p>
+                    </div>
+                    <!-- Regular Card: Fiscal -->
+                    <div class="service-card tonal-card">
+                        <span class="material-symbols-outlined text-primary">receipt_long</span>
+                        <h3>Déclaration fiscale</h3>
+                        <p>Optimisation et conformité de vos obligations fiscales annuelles : TVA, IS, IR.</p>
+                    </div>
+                    <!-- Large Card: Création d'entreprise -->
+                    <div class="service-card tonal-card large primary">
+                        <div class="icon-rocket" style="position: absolute; top: 0; right: 0; padding: 2rem; opacity: 0.1; transform: scale(3);">
+                            <span class="material-symbols-outlined" style="font-size: 5rem;">rocket_launch</span>
+                        </div>
+                        <div>
+                            <h3 class="h-serif" style="font-size: 2.25rem;">Création d'entreprise</h3>
+                            <p style="max-width: 500px; font-size: 1.125rem;">De l'idée au business plan. Nous vous accompagnons dans le choix de votre statut juridique et les démarches d'immatriculation en Guadeloupe.</p>
+                        </div>
+                        <div style="margin-top: 2rem;">
+                            <button class="btn-pill" style="background: white; color: var(--primary); padding: 1rem 2.5rem;">Démarrer mon projet</button>
+                        </div>
+                    </div>
+                    <!-- Regular Card: Prévisionnel -->
+                    <div class="service-card tonal-card">
+                        <span class="material-symbols-outlined highlight">query_stats</span>
+                        <h3>Prévisionnel</h3>
+                        <p>Analyses et projections financières pour sécuriser vos investissements et vos demandes de financement.</p>
+                    </div>
+                    <!-- Regular Card: Administratif -->
+                    <div class="service-card tonal-card">
+                        <span class="material-symbols-outlined" style="color: var(--secondary)">folder_managed</span>
+                        <h3>Service administratif</h3>
+                        <p>Secrétariat externe, gestion documentaire et aide administrative pour alléger votre quotidien.</p>
+                    </div>
+                    <!-- Special Card: Aide Régionale -->
+                    <div class="service-card tonal-card large" style="background: var(--secondary-container);">
+                        <div style="display: flex; gap: 2rem; align-items: center;">
+                             <div style="background: white; padding: 1.5rem; border-radius: 50%; display: flex; align-items: center; justify-content: center;">
+                                <span class="material-symbols-outlined text-primary" style="font-size: 3rem;">map</span>
+                             </div>
+                             <div>
+                                <h3 class="h-serif">Demande d'aide régionale</h3>
+                                <p>Spécialiste des dispositifs d'aide en Guadeloupe (Région, Europe). Maximisez vos chances d'obtenir des subventions locales.</p>
+                             </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer section-padding" style="background: var(--surface-container-low); border-top: 1px solid var(--outline-variant);">
+        <div class="container footer-content" style="display: flex; justify-content: space-between; align-items: center;">
+            <div class="footer-logo">
+                <div class="logo">
+                    <img src="https://lh3.googleusercontent.com/aida/ADBb0uhedNh7o06tDECxg36_5Ja4P_ob7J22xJIp5zdT7EcDhoY-UBu56gZlJUFDRunIrz3Tupk1Y603tMN3S5ayKpB-MPk0fVVcSaEQVG_F7ip06eoczfBE5LMgfnWEEjH_XXj4P6JEXV0WTJzhpmiqn-j_zPs1szkrsqiLrnDRDcZX7MQju2_1GfWudvgyjiuQzdyNh1_MASBlgakNtyRt7jVFTKCvHIZWhfTnlu6y9gSNNgX90crG5pLBaymXGxlpw2neG_glT2KLIw" alt="Logo R. Middleton Gestion" style="height: 2.5rem;">
+                    <span class="logo-text">R. MIDDLETON GESTION</span>
+                </div>
+                <p style="margin-top: 1rem; color: var(--on-surface-variant);">Expertise comptable & Gestion aux Abymes</p>
+            </div>
+            <div class="footer-bottom" style="text-align: right;">
+                <p class="label-md" style="opacity: 0.5;">© 2024 R. MIDDLETON GESTION. Tous droits réservés.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

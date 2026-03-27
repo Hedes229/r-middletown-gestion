@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+
+<html class="light" lang="fr"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,400;0,700;1,400&amp;family=Manrope:wght@300;400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "error-dim": "#770326",
+              "on-tertiary-fixed": "#470025",
+              "error": "#ac3149",
+              "surface-container-low": "#f4f4f0",
+              "secondary": "#6b5f25",
+              "surface-variant": "#e1e3df",
+              "on-surface": "#303330",
+              "inverse-primary": "#8c7fff",
+              "on-error-container": "#68001f",
+              "surface-container-highest": "#e1e3df",
+              "error-container": "#f76a80",
+              "on-tertiary": "#fff7f7",
+              "surface-dim": "#d9dbd6",
+              "on-tertiary-container": "#70003d",
+              "secondary-fixed": "#f7e59d",
+              "surface-tint": "#5948d3",
+              "primary-fixed": "#c0b9ff",
+              "on-secondary-fixed": "#4c4108",
+              "secondary-container": "#f7e59d",
+              "surface-container-lowest": "#ffffff",
+              "surface-container-high": "#e8e8e4",
+              "surface-bright": "#faf9f6",
+              "on-secondary": "#fff8eb",
+              "background": "#faf9f6",
+              "primary-fixed-dim": "#b2a9ff",
+              "primary": "#5948d3",
+              "secondary-dim": "#5f531a",
+              "inverse-on-surface": "#9d9d9a",
+              "on-error": "#fff7f7",
+              "inverse-surface": "#0d0f0d",
+              "tertiary-dim": "#a4005c",
+              "on-surface-variant": "#5d605c",
+              "primary-dim": "#4d39c7",
+              "on-primary-container": "#3518b0",
+              "surface": "#faf9f6",
+              "surface-container": "#eeeeea",
+              "tertiary-fixed-dim": "#ff83b3",
+              "tertiary": "#ba0069",
+              "secondary-fixed-dim": "#e9d791",
+              "on-secondary-fixed-variant": "#695d23",
+              "primary-container": "#c0b9ff",
+              "on-primary-fixed-variant": "#3e27b9",
+              "on-primary": "#fcf7ff",
+              "tertiary-fixed": "#ff9bbe",
+              "outline": "#797b78",
+              "on-secondary-container": "#5f531a",
+              "outline-variant": "#b1b2af",
+              "tertiary-container": "#ff9bbe",
+              "on-primary-fixed": "#210088",
+              "on-background": "#303330",
+              "on-tertiary-fixed-variant": "#800046"
+            },
+            fontFamily: {
+              "headline": ["Noto Serif"],
+              "body": ["Manrope"],
+              "label": ["Manrope"]
+            },
+            borderRadius: {"DEFAULT": "1rem", "lg": "2rem", "xl": "3rem", "full": "9999px"},
+          },
+        },
+      }
+    </script>
+<style>
+      .material-symbols-outlined {
+        font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+      }
+      .glass-effect {
+        backdrop-filter: blur(40px);
+        -webkit-backdrop-filter: blur(40px);
+      }
+      .editorial-shadow {
+        box-shadow: 0 40px 40px 0 rgba(48,51,48,0.06);
+      }
+      .hero-gradient {
+        background: linear-gradient(135deg, #f7e59d 0%, #ff9bbe 50%, #5948d3 100%);
+      }
+      .cta-gradient {
+        background: linear-gradient(45deg, #5948d3 0%, #ba0069 100%);
+      }
+    </style>
+</head>
+<body class="bg-background text-on-surface font-body selection:bg-primary-container selection:text-on-primary-container">
+<!-- Top Navigation -->
+<nav class="fixed top-0 w-full z-50 bg-[#faf9f6]/80 dark:bg-[#303330]/80 backdrop-blur-2xl shadow-[0_40px_40px_0_rgba(48,51,48,0.06)]">
+<div class="flex justify-between items-center px-6 md:px-12 py-6 max-w-[1440px] mx-auto">
+<div class="text-2xl font-headline font-bold italic text-[#303330] dark:text-[#faf9f6] tracking-tight">
+<div class="flex items-center gap-3">
+<img alt="R. MIDDLETON GESTION Logo" class="h-12 w-12 object-contain" src="https://lh3.googleusercontent.com/aida/ADBb0uhedNh7o06tDECxg36_5Ja4P_ob7J22xJIp5zdT7EcDhoY-UBu56gZlJUFDRunIrz3Tupk1Y603tMN3S5ayKpB-MPk0fVVcSaEQVG_F7ip06eoczfBE5LMgfnWEEjH_XXj4P6JEXV0WTJzhpmiqn-j_zPs1szkrsqiLrnDRDcZX7MQju2_1GfWudvgyjiuQzdyNh1_MASBlgakNtyRt7jVFTKCvHIZWhfTnlu6y9gSNNgX90crG5pLBaymXGxlpw2neG_glT2KLIw"/>
+<span class="not-italic uppercase">R. MIDDLETON GESTION</span>
+</div>
+</div>
+<!-- Desktop Links -->
+<div class="hidden md:flex items-center gap-12">
+<a class="text-[#303330] dark:text-[#e1e3df] hover:text-[#5948d3] transition-all duration-300 font-medium" href="#services">Services</a>
+<a class="text-[#303330] dark:text-[#e1e3df] hover:text-[#5948d3] transition-all duration-300 font-medium" href="#about">À Propos</a>
+<a class="text-[#303330] dark:text-[#e1e3df] hover:text-[#5948d3] transition-all duration-300 font-medium" href="#contact">Contact</a>
+<a class="cta-gradient text-on-primary px-8 py-3 rounded-full font-semibold hover:opacity-90 transition-all scale-100 active:scale-95 duration-200" href="#contact">Prendre rendez-vous</a>
+</div>
+<!-- Mobile Menu Toggle -->
+<button class="md:hidden text-on-surface">
+<span class="material-symbols-outlined" data-icon="menu">menu</span>
+</button>
+</div>
+</nav>
+<!-- Hero Section -->
+<section class="relative min-h-screen flex items-center pt-24 overflow-hidden">
+<div class="absolute inset-0 hero-gradient opacity-10"></div>
+<!-- Decorative Elements -->
+<div class="absolute -top-24 -right-24 w-96 h-96 bg-tertiary/10 rounded-full blur-3xl"></div>
+<div class="absolute bottom-1/4 -left-24 w-64 h-64 bg-secondary-fixed/30 rounded-full blur-3xl"></div>
+<div class="container mx-auto px-6 md:px-12 grid md:grid-cols-2 gap-16 items-center relative z-10">
+<div class="space-y-8">
+<span class="font-label text-sm tracking-widest uppercase text-tertiary font-bold">Expertise Comptable en Guadeloupe</span>
+<h1 class="font-headline text-5xl md:text-7xl font-bold leading-tight text-on-surface">
+                    Votre gestion, <br/> <span class="italic text-primary">notre priorité.</span>
+</h1>
+<p class="text-lg md:text-xl text-on-surface-variant max-w-lg font-light leading-relaxed">
+                    Un accompagnement sur-mesure pour les entrepreneurs guadeloupéens. Alliez rigueur professionnelle et proximité humaine pour la réussite de vos projets.
+                </p>
+<div class="flex flex-col sm:flex-row gap-6 pt-4">
+<a class="cta-gradient text-on-primary text-center px-10 py-5 rounded-full font-bold text-lg editorial-shadow hover:scale-105 transition-transform duration-300" href="#contact">Prendre rendez-vous</a>
+<a class="bg-surface-container-high text-primary text-center px-10 py-5 rounded-full font-bold text-lg hover:bg-surface-container-highest transition-colors duration-300" href="#services">Explorer nos services</a>
+</div>
+</div>
+<div class="relative group">
+<div class="absolute -inset-4 hero-gradient rounded-xl blur-2xl opacity-20 group-hover:opacity-30 transition-opacity"></div>
+<div class="relative aspect-[4/5] overflow-hidden rounded-xl editorial-shadow">
+<img alt="Modern office in Guadeloupe" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" data-alt="luxury modern minimalist office interior with tropical plants visible through large windows soft morning sunlight elegant furniture" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBgxiiW9upD13IOhTRIDbAx1wpQIeV6TrvdVPOmF-eZd1Vk0AxmSifb6DxsW4_jKWcN0gYeHwlh_CMcrGiVeBoJ8S_skFmn6h76emiSphmsL9QFmPUZyuEveKsBmQbCbCtu2D9AaHw8_MYRPVn875ejsgkxOMeSWHeurbuttTjLKt3jjqAeV3ziN0Hpr3uG2RhbgpKB1ffJal-Ts2zOVC4FWslDD6kc1-uzaQASW2LknWjt5RGDI3A4Ti86Z1q48iy5L3PCBP-kxf0"/>
+</div>
+<!-- Floating Info Card -->
+<div class="absolute -bottom-8 -left-8 bg-surface p-8 rounded-lg editorial-shadow max-w-xs hidden lg:block">
+<p class="font-headline italic text-xl text-primary mb-2">"La précision au service de votre ambition"</p>
+<p class="text-sm text-on-surface-variant uppercase tracking-wider">R. MIDDLETON GESTION, votre partenaire de confiance aux Abymes.</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Services Section -->
+<section class="py-32 bg-surface-container-low" id="services">
+<div class="container mx-auto px-6 md:px-12">
+<div class="text-center mb-24">
+<h2 class="font-headline text-4xl md:text-5xl font-bold mb-6">Des services <span class="italic text-tertiary">d'excellence</span></h2>
+<div class="w-24 h-1 cta-gradient mx-auto rounded-full"></div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-6">
+<!-- Large Card: Tenue comptable -->
+<div class="md:col-span-2 lg:col-span-2 bg-surface p-10 rounded-xl editorial-shadow flex flex-col justify-between group hover:-translate-y-2 transition-transform duration-500">
+<div>
+<span class="material-symbols-outlined text-4xl text-primary mb-6" data-icon="account_balance_wallet">account_balance_wallet</span>
+<h3 class="font-headline text-2xl font-bold mb-4">Tenue comptable</h3>
+<p class="text-on-surface-variant leading-relaxed">Externalisation complète de votre comptabilité pour vous concentrer sur votre cœur de métier.</p>
+</div>
+<div class="mt-8 flex items-center text-primary font-bold group-hover:gap-4 transition-all gap-2 cursor-pointer">
+                        En savoir plus <span class="material-symbols-outlined" data-icon="arrow_forward">arrow_forward</span>
+</div>
+</div>
+<!-- Regular Card: Paie -->
+<div class="bg-surface p-8 rounded-xl editorial-shadow hover:-translate-y-1 transition-all">
+<span class="material-symbols-outlined text-3xl text-tertiary mb-6" data-icon="payments">payments</span>
+<h3 class="font-headline text-xl font-bold mb-3">Gestion de la paie</h3>
+<p class="text-on-surface-variant text-sm">Édition des bulletins de salaire et gestion rigoureuse des variables.</p>
+</div>
+<!-- Regular Card: Social -->
+<div class="bg-surface p-8 rounded-xl editorial-shadow hover:-translate-y-1 transition-all">
+<span class="material-symbols-outlined text-3xl text-secondary mb-6" data-icon="group_add">group_add</span>
+<h3 class="font-headline text-xl font-bold mb-3">Déclaration sociale</h3>
+<p class="text-on-surface-variant text-sm">Gestion des relations avec les organismes sociaux et déclarations obligatoires.</p>
+</div>
+<!-- Regular Card: Fiscal -->
+<div class="bg-surface p-8 rounded-xl editorial-shadow hover:-translate-y-1 transition-all">
+<span class="material-symbols-outlined text-3xl text-primary mb-6" data-icon="receipt_long">receipt_long</span>
+<h3 class="font-headline text-xl font-bold mb-3">Déclaration fiscale</h3>
+<p class="text-on-surface-variant text-sm">Optimisation et conformité de vos obligations fiscales annuelles.</p>
+</div>
+<!-- Large Card: Création d'entreprise -->
+<div class="md:col-span-2 lg:col-span-2 bg-primary text-on-primary p-10 rounded-xl editorial-shadow flex flex-col justify-between group overflow-hidden relative">
+<div class="absolute top-0 right-0 p-8 opacity-10 scale-150">
+<span class="material-symbols-outlined text-9xl" data-icon="rocket_launch" data-weight="fill" style="font-variation-settings: 'FILL' 1;">rocket_launch</span>
+</div>
+<div>
+<h3 class="font-headline text-3xl font-bold mb-4">Création d'entreprise</h3>
+<p class="text-on-primary/80 leading-relaxed max-w-md">De l'idée au business plan. Nous vous accompagnons dans le choix de votre statut et les démarches d'immatriculation.</p>
+</div>
+<div class="mt-8">
+<button class="bg-surface text-primary px-8 py-3 rounded-full font-bold hover:bg-secondary-fixed transition-colors">Démarrer mon projet</button>
+</div>
+</div>
+<!-- Regular Card: Prévisionnel -->
+<div class="bg-surface p-8 rounded-xl editorial-shadow hover:-translate-y-1 transition-all">
+<span class="material-symbols-outlined text-3xl text-tertiary mb-6" data-icon="query_stats">query_stats</span>
+<h3 class="font-headline text-xl font-bold mb-3">Prévisionnel</h3>
+<p class="text-on-surface-variant text-sm">Analyses et projections pour sécuriser vos investissements.</p>
+</div>
+<!-- Regular Card: Administratif -->
+<div class="bg-surface p-8 rounded-xl editorial-shadow hover:-translate-y-1 transition-all">
+<span class="material-symbols-outlined text-3xl text-secondary mb-6" data-icon="folder_managed">folder_managed</span>
+<h3 class="font-headline text-xl font-bold mb-3">Service administratif</h3>
+<p class="text-on-surface-variant text-sm">Secrétariat et gestion documentaire pour alléger votre quotidien.</p>
+</div>
+<!-- Special Card: Aide Régionale -->
+<div class="md:col-span-2 bg-secondary-container p-10 rounded-xl editorial-shadow flex flex-col md:flex-row gap-8 items-center">
+<div class="p-6 bg-surface rounded-full">
+<span class="material-symbols-outlined text-4xl text-on-secondary-container" data-icon="map">map</span>
+</div>
+<div>
+<h3 class="font-headline text-2xl font-bold mb-2 text-on-secondary-container">Demande d'aide régionale</h3>
+<p class="text-on-secondary-fixed-variant leading-relaxed">Spécialiste des dispositifs d'aide en Guadeloupe. Maximisez vos chances d'obtenir des subventions locales.</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- About Section -->
+<section class="py-32 relative overflow-hidden bg-surface" id="about">
+<div class="container mx-auto px-6 md:px-12 flex flex-col lg:flex-row items-center gap-16 lg:gap-20">
+<!-- Left: Image -->
+<div class="lg:w-1/2 relative w-full">
+<div class="absolute -top-6 -left-6 w-full h-full bg-surface-container-high rounded-xl -z-10"></div>
+<div class="relative overflow-hidden rounded-xl editorial-shadow aspect-[4/5] lg:aspect-auto lg:h-[600px]">
+<img alt="Expert Comptable R. MIDDLETON GESTION" class="w-full h-full object-cover" data-alt="professional portrait of a confident female entrepreneur in a stylish modern office with warm natural lighting tropical plants and elegant professional attire" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCvT05pLPVXgL-7GbIa2_iX5NQzFb_5B5ytr8QOKTGkz_PQ02rrSkM4nvKfxX4jyI1JVa0QJ2s90J4Jh_mWvqSUdLcrlB2o1BdVvCZC-j6y1cAtIpT1_9V179sSxWDg0Yoi07voC99irWcjnYUuLpieGo_UyyUQNAYRtMAg6WpHDF5RIVd1guYvFVsmtk98_V3wKM0JQhkpCyveAWBT1i72GSfUS6vqcZ5smglXDwAmGqVSQgQ2fR9hU5GIiUKUnnzcUmXaBicz66E"/>
+</div>
+<div class="absolute bottom-6 right-6 bg-surface p-6 rounded-lg editorial-shadow">
+<p class="font-headline font-bold text-primary uppercase">R. MIDDLETON GESTION</p>
+<p class="text-xs text-on-surface-variant uppercase tracking-widest mt-1">Expertise &amp; Conseil</p>
+</div>
+</div>
+<!-- Right: Text Content -->
+<div class="lg:w-1/2 space-y-8">
+<h2 class="font-headline text-4xl md:text-5xl font-bold leading-tight">
+                    Un cabinet à <span class="italic text-tertiary">taille humaine</span>, dédié à votre succès.
+                </h2>
+<div class="space-y-6">
+<p class="text-lg text-on-surface-variant leading-relaxed">
+                        Installé au cœur de la Guadeloupe, le cabinet R. MIDDLETON GESTION est né d'une volonté simple : offrir aux entrepreneurs locaux une expertise technique de haut niveau alliée à une compréhension fine du tissu économique régional.
+                    </p>
+<p class="text-lg text-on-surface-variant leading-relaxed">
+                        Nous croyons que la comptabilité n'est pas qu'une contrainte légale, mais un véritable levier stratégique. C'est pourquoi nous privilégions l'écoute, la réactivité et la transparence dans chacun de nos échanges.
+                    </p>
+</div>
+<div class="grid grid-cols-2 gap-8 pt-6 border-t border-outline-variant/20">
+<div>
+<p class="text-3xl font-headline font-bold text-primary mb-2">100%</p>
+<p class="text-xs uppercase tracking-widest font-bold text-on-surface-variant">Engagement local</p>
+</div>
+<div>
+<p class="text-3xl font-headline font-bold text-tertiary mb-2">Proximité</p>
+<p class="text-xs uppercase tracking-widest font-bold text-on-surface-variant">Expertise Guadeloupe</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Contact Section -->
+<section class="py-32 bg-surface-container-low" id="contact">
+<div class="container mx-auto px-6 md:px-12">
+<div class="bg-surface rounded-xl editorial-shadow overflow-hidden grid lg:grid-cols-5">
+<div class="lg:col-span-2 cta-gradient p-12 text-on-primary flex flex-col justify-between">
+<div>
+<h2 class="font-headline text-4xl font-bold mb-8">Commençons à travailler ensemble</h2>
+<p class="text-on-primary/80 text-lg mb-12">Vous avez une question ou souhaitez planifier une première consultation ? Notre équipe vous répond sous 24h.</p>
+<div class="space-y-8">
+<div class="flex items-start gap-4">
+<span class="material-symbols-outlined mt-1" data-icon="location_on">location_on</span>
+<p class="font-medium">15 Cours Louis Chauvel,<br/>97139 Les Abymes, Guadeloupe</p>
+</div>
+<div class="flex items-center gap-4">
+<span class="material-symbols-outlined" data-icon="mail">mail</span>
+<p class="font-medium">middleton.gestion@gmail.com</p>
+</div>
+<div class="flex items-center gap-4">
+<span class="material-symbols-outlined" data-icon="schedule">schedule</span>
+<p class="font-medium">Lun - Ven: 08:30 - 17:00</p>
+</div>
+</div>
+</div>
+<div class="mt-16 flex gap-4">
+<div class="w-10 h-10 rounded-full border border-on-primary/30 flex items-center justify-center hover:bg-on-primary hover:text-primary transition-colors cursor-pointer">
+<span class="material-symbols-outlined text-sm" data-icon="share">share</span>
+</div>
+<div class="w-10 h-10 rounded-full border border-on-primary/30 flex items-center justify-center hover:bg-on-primary hover:text-primary transition-colors cursor-pointer">
+<span class="material-symbols-outlined text-sm" data-icon="thumb_up">thumb_up</span>
+</div>
+</div>
+</div>
+<div class="lg:col-span-3 p-12 bg-surface">
+<form action="#" class="space-y-8">
+<div class="grid md:grid-cols-2 gap-8">
+<div class="space-y-2">
+<label class="font-label text-xs uppercase font-bold tracking-widest text-on-surface-variant">Nom Complet</label>
+<input class="w-full bg-surface-container-low border-0 border-b-2 border-outline-variant/20 focus:border-primary focus:ring-0 px-0 py-3 transition-colors" placeholder="Jean Dupont" type="text"/>
+</div>
+<div class="space-y-2">
+<label class="font-label text-xs uppercase font-bold tracking-widest text-on-surface-variant">Email</label>
+<input class="w-full bg-surface-container-low border-0 border-b-2 border-outline-variant/20 focus:border-primary focus:ring-0 px-0 py-3 transition-colors" placeholder="jean@exemple.com" type="email"/>
+</div>
+</div>
+<div class="space-y-2">
+<label class="font-label text-xs uppercase font-bold tracking-widest text-on-surface-variant">Sujet</label>
+<select class="w-full bg-surface-container-low border-0 border-b-2 border-outline-variant/20 focus:border-primary focus:ring-0 px-0 py-3 transition-colors">
+<option>Création d'entreprise</option>
+<option>Tenue comptable</option>
+<option>Aide régionale</option>
+<option>Autre demande</option>
+</select>
+</div>
+<div class="space-y-2">
+<label class="font-label text-xs uppercase font-bold tracking-widest text-on-surface-variant">Message</label>
+<textarea class="w-full bg-surface-container-low border-0 border-b-2 border-outline-variant/20 focus:border-primary focus:ring-0 px-0 py-3 transition-colors" placeholder="Comment pouvons-nous vous aider ?" rows="4"></textarea>
+</div>
+<button class="w-full cta-gradient text-on-primary py-5 rounded-full font-bold text-lg hover:opacity-90 transition-opacity editorial-shadow" type="submit">Envoyer ma demande</button>
+</form>
+</div>
+</div>
+</div>
+</section>
+<!-- Map Section -->
+<section class="h-[400px] w-full bg-surface-container-highest relative overflow-hidden">
+<div class="absolute inset-0 grayscale opacity-40 mix-blend-multiply" data-location="Les Abymes">
+<div class="w-full h-full bg-[#e1e3df] flex items-center justify-center">
+<span class="material-symbols-outlined text-6xl text-on-surface-variant/20" data-icon="location_on">location_on</span>
+</div>
+</div>
+<div class="absolute inset-0 flex items-center justify-center pointer-events-none">
+<div class="bg-surface p-4 rounded-xl editorial-shadow flex items-center gap-4">
+<span class="material-symbols-outlined text-primary" data-icon="pin_drop" data-weight="fill" style="font-variation-settings: 'FILL' 1;">pin_drop</span>
+<span class="font-headline font-bold">15 Cours Louis Chauvel</span>
+</div>
+</div>
+</section>
+<!-- Footer -->
+<footer class="bg-[#f4f4f0] dark:bg-[#1a1a1a] w-full py-16 px-6 md:px-12 border-t border-[#e1e3df]/20">
+<div class="max-w-[1440px] mx-auto flex flex-col md:flex-row justify-between items-center gap-8">
+<div class="flex flex-col items-center md:items-start gap-4">
+<div class="flex items-center gap-3 mb-2">
+<img alt="R. MIDDLETON GESTION Logo" class="h-10 w-10 object-contain" src="https://lh3.googleusercontent.com/aida/ADBb0uhedNh7o06tDECxg36_5Ja4P_ob7J22xJIp5zdT7EcDhoY-UBu56gZlJUFDRunIrz3Tupk1Y603tMN3S5ayKpB-MPk0fVVcSaEQVG_F7ip06eoczfBE5LMgfnWEEjH_XXj4P6JEXV0WTJzhpmiqn-j_zPs1szkrsqiLrnDRDcZX7MQju2_1GfWudvgyjiuQzdyNh1_MASBlgakNtyRt7jVFTKCvHIZWhfTnlu6y9gSNNgX90crG5pLBaymXGxlpw2neG_glT2KLIw"/>
+<div class="text-xl font-headline font-bold text-[#303330] dark:text-[#faf9f6] uppercase">R. MIDDLETON GESTION</div>
+</div>
+<p class="text-[#303330]/70 dark:text-[#faf9f6]/70 text-sm font-body">Expertise comptable &amp; Gestion aux Abymes</p>
+</div>
+<div class="flex flex-wrap justify-center gap-8">
+<a class="font-label text-sm tracking-wide uppercase text-[#303330]/70 dark:text-[#faf9f6]/70 hover:text-[#5948d3] transition-colors" href="#">Mentions Légales</a>
+<a class="font-label text-sm tracking-wide uppercase text-[#303330]/70 dark:text-[#faf9f6]/70 hover:text-[#5948d3] transition-colors" href="#">Confidentialité</a>
+<a class="font-label text-sm tracking-wide uppercase text-[#303330]/70 dark:text-[#faf9f6]/70 hover:text-[#5948d3] transition-colors" href="#">Conditions Générales</a>
+</div>
+<div class="text-[#303330]/50 dark:text-[#faf9f6]/50 text-xs font-label tracking-widest uppercase">© 2024 R. MIDDLETON GESTION. Tous droits réservés.</div>
+</div>
+</footer>
+</body></html>
