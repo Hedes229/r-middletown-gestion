@@ -5,178 +5,181 @@ function Home() {
     <>
       {/* ── HERO ─────────────────────────────────────────────── */}
       <header className="hero">
-        {/* Decorative background blobs */}
         <div className="hero-blob blob-1" aria-hidden="true" />
         <div className="hero-blob blob-2" aria-hidden="true" />
 
         <div className="container hero-grid">
-          {/* Left: Copy */}
-          <div className="hero-content">
-            <span className="hero-eyebrow label-md">Expertise Comptable · Guadeloupe</span>
+          <div className="hero-content animate-fade-up">
+            <span className="hero-eyebrow label-md">Expertise & Conseil · Guadeloupe</span>
             <h1 className="h-serif display-lg">
-              L'art de la <em className="text-primary">gestion</em>{' '}
-              au service de votre <em className="text-tertiary">vision.</em>
+              La rigueur du <em className="text-secondary" style={{ fontStyle: 'italic' }}>chiffre</em>,<br />
+              l'audace du <em className="text-tertiary" style={{ fontStyle: 'italic' }}>conseil.</em>
             </h1>
             <p className="body-lg hero-desc">
-              Plus qu'un cabinet, un partenaire de confiance. Nous transformons
-              vos obligations comptables en leviers de croissance, avec la
-              rigueur d'un grand cabinet et la proximité d'une équipe locale.
+              R MIDDLETON GESTION redéfinit l'accompagnement comptable. Nous fusionnons précision technique et vision stratégique pour propulser les entrepreneurs de Guadeloupe vers l'excellence.
             </p>
             <div className="hero-actions">
               <Link to="/contact" className="cta-gradient btn-pill btn-lg">
-                Prendre rendez-vous
+                Échanger sur votre projet
               </Link>
-              <Link to="/services" className="btn-ghost btn-lg">
+              <Link to="/services" className="btn-ghost btn-lg" style={{ border: '2px solid var(--primary)', color: 'var(--primary)' }}>
                 Nos expertises →
               </Link>
             </div>
 
-            {/* Trust bar */}
             <div className="trust-bar">
               <div className="trust-item">
                 <strong>15+</strong>
-                <span>années d'expertise</span>
+                <p className="label-md">Années d'Expertise</p>
               </div>
-              <div className="trust-divider" aria-hidden="true" />
               <div className="trust-item">
-                <strong>100%</strong>
-                <span>ancrage Guadeloupe</span>
+                <strong>Local</strong>
+                <p className="label-md">Ancrage Guadeloupe</p>
               </div>
-              <div className="trust-divider" aria-hidden="true" />
               <div className="trust-item">
-                <strong>Sur-mesure</strong>
-                <span>approche individuelle</span>
+                <strong>Privé</strong>
+                <p className="label-md">Accompagnement Sur-Mesure</p>
               </div>
             </div>
           </div>
 
-          {/* Right: Visual cards */}
-          <div className="hero-visual">
-            <div className="hero-card hero-card-main tonal-card">
-              <img
-                src="/assets/portrait.png"
-                alt="R. Middleton – Expert-Comptable"
-                className="hero-portrait"
-              />
-              <div className="hero-card-badge tonal-card">
-                <span className="material-symbols-outlined text-primary" style={{ fontSize: '1.5rem' }}>verified</span>
-                <div>
-                  <p style={{ fontWeight: 800, fontSize: '0.85rem' }}>Solange Belmont</p>
-                  <p className="label-md" style={{ opacity: 0.6 }}>Expert-Comptable</p>
-                </div>
+          <div className="hero-visual animate-fade-up animate-delay-1">
+            <img
+              src="/assets/portrait.png"
+              alt="R. Middleton – Image de marque"
+              className="hero-portrait"
+            />
+            <div className="hero-card-badge">
+              <span className="material-symbols-outlined text-tertiary">workspace_premium</span>
+              <div>
+                <p style={{ fontWeight: 800, fontSize: '0.9rem', color: 'var(--primary)' }}>R MIDDLETON GESTION</p>
+                <p className="label-md" style={{ opacity: 0.6, fontSize: '0.65rem' }}>Efficacité · Clarté · Succès</p>
               </div>
-            </div>
-
-            <div className="hero-card hero-card-stat tonal-card">
-              <span className="material-symbols-outlined text-tertiary" style={{ fontSize: '2rem' }}>query_stats</span>
-              <p style={{ fontWeight: 700 }}>Pilotage de Performance</p>
-              <p className="body-sm" style={{ opacity: 0.65 }}>Éclairez vos décisions stratégiques</p>
             </div>
           </div>
         </div>
       </header>
 
-      {/* ── SERVICES PREVIEW ──────────────────────────────────── */}
-      <section className="section-padding bg-surface-low">
+      {/* ── WHY US ───────────────────────────────────────────── */}
+      <section className="section-padding bg-surface-low overflow-hidden">
         <div className="container">
-          <div className="section-header">
-            <h2 className="h-serif display-md">
-              Expertises <em className="text-primary">ciblées</em>
-            </h2>
-            <p className="body-lg" style={{ maxWidth: 580, marginTop: '1rem', color: 'var(--on-surface-variant)' }}>
-              Une gamme complète de solutions pour sécuriser et optimiser chaque
-              étape de la vie de votre entreprise.
+          <div className="max-w-xl animate-fade-up">
+            <h2 className="display-md h-serif">Pourquoi nous <span className="text-secondary italic">choisir</span> ?</h2>
+            <p className="body-lg" style={{ marginTop: '1.5rem', color: 'var(--on-surface-variant)', maxWidth: '600px' }}>
+              Plus qu'un cabinet, nous sommes le bras droit de votre croissance. Notre approche repose sur trois piliers fondamentaux.
             </p>
           </div>
 
-          <div className="preview-grid" style={{ marginTop: '3.5rem' }}>
-            <div className="service-card tonal-card">
-              <span className="material-symbols-outlined text-primary" style={{ fontSize: '2.5rem' }}>account_balance_wallet</span>
-              <h3>Tenue &amp; Révision</h3>
-              <p>Fiabilité absolue de vos états financiers, externalisation complète de la saisie.</p>
-              <Link to="/services" className="learn-more">En savoir plus <span className="material-symbols-outlined">arrow_forward</span></Link>
+          <div className="preview-grid" style={{ marginTop: '5rem' }}>
+            <div className="service-card tonal-card animate-fade-up animate-delay-1">
+              <span className="material-symbols-outlined text-primary">verified_user</span>
+              <h3 className="h-serif">Transparence Totale</h3>
+              <p>Une clarté absolue sur vos finances et nos honoraires. Pas de surprises, juste des résultats.</p>
             </div>
-
-            <div className="service-card tonal-card primary">
-              <span className="material-symbols-outlined" style={{ fontSize: '2.5rem' }}>rocket_launch</span>
-              <h3 className="h-serif" style={{ fontSize: '1.75rem' }}>Création d'Entreprise</h3>
-              <p>De l'idée à la structure juridique idéale. Nous posons les fondations de votre succès.</p>
-              <Link to="/services" className="btn-pill" style={{ background: 'white', color: 'var(--primary)', marginTop: '0.5rem', display: 'inline-block', width: 'fit-content' }}>
-                Lancer mon projet
-              </Link>
+            <div className="service-card tonal-card animate-fade-up animate-delay-2" style={{ backgroundColor: 'var(--primary)', color: 'white' }}>
+              <span className="material-symbols-outlined" style={{ color: 'var(--secondary)' }}>bolt</span>
+              <h3 className="h-serif">Réactivité Agile</h3>
+              <p>Dans un monde qui change, nous répondons à vos besoins en temps réel pour ne jamais freiner votre élan.</p>
             </div>
-
-            <div className="service-card tonal-card">
-              <span className="material-symbols-outlined text-tertiary" style={{ fontSize: '2.5rem' }}>query_stats</span>
-              <h3>Conseil Stratégique</h3>
-              <p>Analyses prévisionnelles et accompagnement à la levée de fonds régionaux.</p>
-              <Link to="/services" className="learn-more">En savoir plus <span className="material-symbols-outlined">arrow_forward</span></Link>
+            <div className="service-card tonal-card animate-fade-up animate-delay-3">
+              <span className="material-symbols-outlined text-primary">auto_graph</span>
+              <h3 className="h-serif">Vision Stratégique</h3>
+              <p>Nous ne nous contentons pas de compter le passé, nous planifions votre futur financier.</p>
             </div>
-          </div>
-
-          <div style={{ marginTop: '3rem', textAlign: 'center' }}>
-            <Link to="/services" className="btn-secondary">Voir tous nos services</Link>
           </div>
         </div>
       </section>
 
-      {/* ── ABOUT TEASER ──────────────────────────────────────── */}
+      {/* ── OUR METHOD ───────────────────────────────────────── */}
       <section className="section-padding">
-        <div className="container about-grid">
-          <div className="about-visual">
-            <div className="visual-wrapper">
-              <img
-                src="/assets/portrait.png"
-                alt="Cabinet Middleton Gestion"
-                className="main-image"
-              />
-            </div>
-            <div className="floating-card tonal-card">
-              <p className="logo-text" style={{ color: 'var(--primary)' }}>R. MIDDLETON GESTION</p>
-              <p className="label-md" style={{ opacity: 0.55 }}>Expertise &amp; Conseil</p>
-            </div>
+        <div className="container">
+          <div className="text-center animate-fade-up" style={{ marginBottom: '6rem' }}>
+            <span className="label-md text-secondary">Notre Processus</span>
+            <h2 className="display-md h-serif" style={{ marginTop: '1rem' }}>L'Excellence par la <span className="italic text-primary">Méthode</span></h2>
           </div>
 
-          <div className="about-content">
-            <h2 className="about-title h-serif">
-              Un cabinet à <em className="text-tertiary">taille humaine</em>,<br />dédié à votre succès.
-            </h2>
-            <p className="body-lg" style={{ color: 'var(--on-surface-variant)' }}>
-              Installé au cœur de la Guadeloupe, notre cabinet est né d'une
-              conviction : les entrepreneurs locaux méritent une expertise de
-              haut niveau qui comprend les spécificités économiques de notre île.
-            </p>
-            <p className="body-lg" style={{ color: 'var(--on-surface-variant)' }}>
-              Nous privilégions la transparence, la proximité et la réactivité.
-              Vous n'êtes pas un numéro de dossier – vous êtes un partenaire.
-            </p>
-            <Link to="/about" className="btn-secondary" style={{ width: 'fit-content', marginTop: '1rem' }}>
-              Découvrir notre histoire
-            </Link>
+          <div className="grid-steps" style={{ display: 'grid', gridTemplateColumns: 'repeat(4, 1fr)', gap: '3rem' }}>
+            {[
+              { num: '01', title: 'Diagnostic', desc: 'Analyse profonde de votre situation actuelle.' },
+              { num: '02', title: 'Stratégie', desc: 'Définition d\'un plan d\'action sur-mesure.' },
+              { num: '03', title: 'Exécution', desc: 'Mise en place des outils et processus.' },
+              { num: '04', title: 'Pilotage', desc: 'Suivi continu et optimisation de la performance.' },
+            ].map((step, i) => (
+              <div key={i} className="step-item animate-fade-up" style={{ animationDelay: `${0.2 * i}s` }}>
+                <span style={{ fontSize: '3rem', fontWeight: 900, opacity: 0.1, fontFamily: 'var(--font-headline)' }}>{step.num}</span>
+                <h4 className="h-serif" style={{ fontSize: '1.5rem', marginBottom: '1rem' }}>{step.title}</h4>
+                <p className="body-md" style={{ color: 'var(--on-surface-variant)' }}>{step.desc}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* ── TESTIMONIALS ─────────────────────────────────────── */}
+      <section className="section-padding bg-surface-container-low">
+        <div className="container">
+          <div className="text-center animate-fade-up" style={{ marginBottom: '5rem' }}>
+            <span className="label-md text-secondary">Témoignages</span>
+            <h2 className="display-md h-serif" style={{ marginTop: '1rem' }}>La voix de nos <span className="italic text-primary">Clients</span></h2>
+          </div>
+
+          <div className="preview-grid">
+            <div className="tonal-card animate-fade-up animate-delay-1" style={{ padding: '3rem' }}>
+              <span className="material-symbols-outlined text-secondary" style={{ fontSize: '3rem', marginBottom: '1.5rem' }}>format_quote</span>
+              <p className="body-lg" style={{ fontStyle: 'italic', marginBottom: '2rem' }}>
+                "R MIDDLETON GESTION a transformé notre approche comptable. Leur vision stratégique nous a permis de sécuriser un financement crucial pour notre expansion."
+              </p>
+              <div>
+                <p style={{ fontWeight: 800 }}>Jean-Marc R.</p>
+                <p className="label-md" style={{ opacity: 0.6 }}>Directeur, Solaire Antilles</p>
+              </div>
+            </div>
+            <div className="tonal-card animate-fade-up animate-delay-2" style={{ padding: '3rem' }}>
+              <span className="material-symbols-outlined text-secondary" style={{ fontSize: '3rem', marginBottom: '1.5rem' }}>format_quote</span>
+              <p className="body-lg" style={{ fontStyle: 'italic', marginBottom: '2rem' }}>
+                "Un accompagnement d'une précision rare. Solange et son équipe sont de véritables partenaires de croissance, réactifs et toujours de bon conseil."
+              </p>
+              <div>
+                <p style={{ fontWeight: 800 }}>Marie L.</p>
+                <p className="label-md" style={{ opacity: 0.6 }}>Fondatrice, L'Atelier Créatif</p>
+              </div>
+            </div>
+            <div className="tonal-card animate-fade-up animate-delay-3" style={{ padding: '3rem' }}>
+              <span className="material-symbols-outlined text-secondary" style={{ fontSize: '3rem', marginBottom: '1.5rem' }}>format_quote</span>
+              <p className="body-lg" style={{ fontStyle: 'italic', marginBottom: '2rem' }}>
+                "La clarté apportée sur nos finances nous a libérés l'esprit pour nous concentrer sur notre cœur de métier. Indispensable pour tout entrepreneur."
+              </p>
+              <div>
+                <p style={{ fontWeight: 800 }}>David P.</p>
+                <p className="label-md" style={{ opacity: 0.6 }}>Gérant, BTP Excellence</p>
+              </div>
+            </div>
           </div>
         </div>
       </section>
 
       {/* ── CTA FINAL ─────────────────────────────────────────── */}
       <section className="cta-banner section-padding" style={{
-        background: 'linear-gradient(135deg, var(--primary) 0%, var(--tertiary) 100%)',
+        background: 'var(--primary)',
         color: 'white',
         textAlign: 'center',
+        position: 'relative',
+        overflow: 'hidden'
       }}>
-        <div className="container">
-          <h2 className="h-serif" style={{ fontSize: 'clamp(2rem, 5vw, 3rem)', marginBottom: '1.5rem' }}>
-            Prêt à donner une nouvelle dimension à votre gestion ?
+        <div className="hero-blob" style={{ background: 'var(--secondary)', opacity: 0.1, width: '800px', height: '800px', top: '-400px', left: '-200px' }} />
+        <div className="container" style={{ position: 'relative', z-index: 1 }}>
+          <h2 className="h-serif" style={{ fontSize: 'clamp(2.5rem, 6vw, 4rem)', marginBottom: '2rem' }}>
+            Prêt à transformer votre <span className="text-secondary italic">gestion</span> ?
           </h2>
-          <p className="body-lg" style={{ opacity: 0.85, maxWidth: 600, margin: '0 auto 2.5rem' }}>
-            Réservez un premier rendez-vous gratuit et découvrez comment nous
-            pouvons transformer vos contraintes en opportunités.
+          <p className="body-lg" style={{ opacity: 0.7, maxWidth: '650px', margin: '0 auto 3rem' }}>
+            Rejoignez les entrepreneurs qui ont choisi la clarté et la croissance. Premier diagnostic offert.
           </p>
           <Link
             to="/contact"
             className="btn-pill btn-lg"
-            style={{ background: 'white', color: 'var(--primary)' }}
+            style={{ background: 'var(--secondary)', color: 'var(--primary)', padding: '1.5rem 4rem', display: 'inline-block' }}
           >
-            Prendre rendez-vous gratuitement
+            Commencer l'aventure
           </Link>
         </div>
       </section>

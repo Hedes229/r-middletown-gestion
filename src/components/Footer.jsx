@@ -7,8 +7,8 @@ function Footer() {
         <div className="footer-grid" style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(250px, 1fr))', gap: '4rem' }}>
           <div className="footer-brand">
             <div className="logo" style={{ marginBottom: '1.5rem' }}>
-              <img src="/assets/logo.png" alt="R. Middleton Gestion" className="logo-img logo-img-sm" />
-              <span className="logo-text">R. MIDDLETON GESTION</span>
+              <img src="/assets/logo.png" alt="R MIDDLETON GESTION" className="logo-img logo-img-sm" />
+              <span className="logo-text">R MIDDLETON GESTION</span>
             </div>
             <p className="body-md" style={{ color: 'var(--on-surface-variant)', maxWidth: '300px' }}>
               Expertise comptable et conseil stratégique pour les entrepreneurs audacieux de la Guadeloupe.
@@ -41,7 +41,7 @@ function Footer() {
         </div>
         
         <div className="footer-bottom" style={{ marginTop: '5rem', paddingTop: '2rem', borderTop: '1px solid var(--outline-variant)', display: 'flex', justifyContent: 'space-between', opacity: 0.6 }}>
-          <p className="label-md">© 2024 R. Middleton Gestion. Tous droits réservés.</p>
+          <p className="label-md">© 2024 R MIDDLETON GESTION. Tous droits réservés.</p>
           <div style={{ display: 'flex', gap: '2rem' }}>
             <Link to="#" className="label-md">Mentions Légales</Link>
             <Link to="#" className="label-md">Confidentialité</Link>

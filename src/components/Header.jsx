@@ -21,7 +21,7 @@ function Header() {
             alt="R. Middleton Gestion"
             className="logo-img"
           />
-          <span className="logo-text">R. MIDDLETON GESTION</span>
+          <span className="logo-text">R MIDDLETON GESTION</span>
         </Link>
         <ul className={`nav-links ${isMobileMenuOpen ? 'active' : ''}`}>
           <li><Link to="/" className={isActive('/') ? 'active' : ''}>Accueil</Link></li>
